@@ -1,0 +1,49 @@
+name: Assembly Reverse Engineering CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, 3.10]
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y nasm gcc gdb binutils
+        pip install -r requirements.txt
+    
+    - name: Build examples
+      run: |
+        chmod +x scripts/build.sh
+        ./scripts/build.sh
+    
+    - name: Run tests
+      run: |
+        chmod +x scripts/test.sh
+        ./scripts/test.sh
+    
+    - name: Security check
+      run: |
+        echo "Checking for dangerous patterns..."
+        find . -name "*.asm" -exec grep -l "syscall\|int 0x80" {} \;
+    
+    - name: Lint Python code
+      run: |
+        pip install flake8 black
+        black --check src/tools/
+        flake8 src/tools/
